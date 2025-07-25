@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.service {
+  width: 1200px;
+  margin: auto;
+}
+.service h3 {
+  padding: 25px 0;
+  text-align: center;
+  /* background-color: antiquewhite; */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: rgb(29, 168, 168); */
+}
+.col-4 {
+  padding: 15px;
+  width: calc(100% / 3);
+}
+.card {
+  padding: 15px;
+  /* height: 200px; */
+  /* background-color: whitesmoke; */
+}
+.card1 a,
+.card2 a,
+.card3 a {
+  display: inline-block;
+  margin-top: 15px;
+}
+.card1 i,
+.card2 i,
+.card3 i {
+  padding: 10px;
+  font-size: 30px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: transparent;
+}
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+  padding: 10px 0;
+}
+
+.card1,
+.card2,
+.card3 {
+  border-radius: 10px;
+  transition: all 1s;
+  background-color: aliceblue;
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transform: translateY(-10px);
+  background: #251dbf;
+  background-image: linear-gradient(to right, #5e7be9, #6128df);
+  color: white;
+}
+.card1:hover i,
+.card2:hover i,
+.card3:hover i {
+  background-color: white;
+  color: black;
+}
+.card1:hover a,
+.card2:hover a,
+.card3:hover a {
+  color: white;
+}
+
+.solution {
+  width: 1200px;
+  margin: auto;
+}
+.col-6 {
+  padding: 15px;
+  width: calc(100% / 2);
+}
+#text {
+  padding-top: 15px;
+}
+.card4 ul {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+}
+.card4 ul li {
+  width: calc(50% - 20px);
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  border-bottom-right-radius: 12px;
+  border-left: 2px solid blue;
+  overflow: hidden;
+}
+.card4 ul li p {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  padding-left: 15px;
+  position: absolute;
+  transition: 0.3s;
+}
+.card4 ul li .bg-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s;
+  left: -100%;
+  border-bottom-right-radius: 12px;
+  background-image: linear-gradient(to right, #5e7be9, #6128df);
+}
+.card4 ul li.active .bg-overlay {
+  left: 0;
+}
+.card4 ul li:hover .bg-overlay {
+  left: 0;
+}
+.card4 ul li:hover p {
+  color: white;
+  padding-left: 20px;
+}
+.card4 ul li.active p {
+  color: white;
+  padding-left: 15px;
+}
+.nav-list {
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card5 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.counter {
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  background-image: url(/assets/images/total-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row-counter-back {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 39, 217, 0.6) 0%,
+    rgba(99, 99, 219, 0.6) 35%,
+    rgba(227, 98, 203, 0.6) 100%
+  );
+  height: 100%;
+}
+.row-counter {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.col-3 {
+  padding: 15px;
+  /* background-color: aqua; */
+  width: calc(100% / 4);
+}
+
+.card6,
+.card7,
+.card8,
+.card9 {
+  text-align: center;
+  color: white;
+}
+
+.portfolio {
+  width: 1200px;
+  margin: auto;
+  /* background-color: aqua; */
+  padding: 15px;
+}
+.portfolio p {
+  /* background-color: bisque; */
+  text-align: center;
+  padding: 15px 0;
+}
+.portfolio h2 {
+  text-align: center;
+}
+.portfolio ul {
+  width: 100%;
+  padding: 20px 0;
+  /* background-color: antiquewhite; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+.portfolio ul li {
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 1s;
+  background-color: whitesmoke;
+}
+.portfolio ul li:first-child {
+  background-color: blue;
+  color: white;
+}
+.portfolio ul li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+.card10,
+.card11,
+.card12 {
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  background-color: azure;
+}
+.image-container {
+  padding: 0 30px;
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.box {
+  width: 80%;
+  position: absolute;
+  height: 180px;
+  top: 150px;
+  left: 10%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: white;
+  opacity: 0;
+  border-radius: 10px;
+  transition: all 1s;
+  overflow: hidden;
+  background-color: rgba(42, 80, 235, 0.973);
+}
+.icon {
+  display: flex;
+  gap: 10px;
+}
+.icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  color: black;
+  font-size: 25px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.card10:hover .box,
+.card11:hover .box,
+.card12:hover .box {
+  opacity: 1;
+}
+.card10:hover,
+.card11:hover,
+.card12:hover {
+  transform: scale(0.98);
+}
+
+.icon i:hover {
+  background-color: #5e7be9;
+  color: white;
+}
